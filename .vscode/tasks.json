@@ -1,0 +1,21 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"type": "npm",
+			"script": "build:css",
+			"group": "build",
+			"problemMatcher": [],
+			"label": "npm: build:css",
+			"detail": "npm-run-all compile:sass prefix:css compress:css"
+		},
+		{
+			"type": "npm",
+			"script": "start",
+			"group": "build",
+			"problemMatcher": [],
+			"label": "npm: start",
+			"detail": "npm-run-all --parallel devserver watch:sass"
+		}
+	]
+}
